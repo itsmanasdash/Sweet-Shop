@@ -43,7 +43,7 @@ const GetStarted = () => {
     if (message.text) setMessage({ type: '', text: '' });
   };
 
-  const handleSignInInput = (e) => {
+  const handleSignInInput = (e : any) => {
     const { name, value } = e.target;
     setSignInData(prev => ({
       ...prev,
@@ -53,7 +53,7 @@ const GetStarted = () => {
     if (message.text) setMessage({ type: '', text: '' });
   };
 
-  const handleRegister = async (e) => {
+  const handleRegister = async (e : any) => {
     e.preventDefault();
     
     // Validation
@@ -106,7 +106,7 @@ const GetStarted = () => {
     }
   };
 
-  const handleSignIn = async (e) => {
+  const handleSignIn = async (e : any) => {
     e.preventDefault();
     
     // Validation
@@ -164,7 +164,7 @@ const GetStarted = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl overflow-hidden">
         <div className="flex min-h-[600px]">
           
@@ -188,7 +188,7 @@ const GetStarted = () => {
                       placeholder="Full Name"
                       value={signUpData.userName}
                       onChange={handleSignUpInput}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                     />
                   </div>
 
@@ -200,7 +200,7 @@ const GetStarted = () => {
                       placeholder="Email Address"
                       value={signUpData.email}
                       onChange={handleSignUpInput}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                     />
                   </div>
 
@@ -212,7 +212,7 @@ const GetStarted = () => {
                       placeholder="Password (min 6 characters)"
                       value={signUpData.password}
                       onChange={handleSignUpInput}
-                      className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                      className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                     />
                     <button
                       type="button"
@@ -239,7 +239,7 @@ const GetStarted = () => {
                     type="button"
                     onClick={handleRegister}
                     disabled={loading}
-                    className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-[1.02] focus:ring-4 focus:ring-blue-300"
+                    className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-[1.02] focus:ring-4 focus:ring-purple-300"
                   >
                     {loading ? (
                       <div className="flex items-center justify-center space-x-2">
@@ -271,7 +271,7 @@ const GetStarted = () => {
                       placeholder="Email Address"
                       value={signInData.email}
                       onChange={handleSignInInput}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                     />
                   </div>
 
@@ -283,7 +283,7 @@ const GetStarted = () => {
                       placeholder="Password"
                       value={signInData.password}
                       onChange={handleSignInInput}
-                      className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                      className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                     />
                     <button
                       type="button"
@@ -295,7 +295,7 @@ const GetStarted = () => {
                   </div>
 
                   <div className="text-right">
-                    <button type="button" className="text-sm text-blue-600 hover:text-blue-800 hover:underline">
+                    <button type="button" className="text-sm text-purple-600 hover:text-purple-800 hover:underline">
                       Forgot Password?
                     </button>
                   </div>
@@ -316,7 +316,7 @@ const GetStarted = () => {
                     type="button"
                     onClick={handleSignIn}
                     disabled={loading}
-                    className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-[1.02] focus:ring-4 focus:ring-blue-300"
+                    className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-[1.02] focus:ring-4 focus:ring-purple-300"
                   >
                     {loading ? (
                       <div className="flex items-center justify-center space-x-2">
@@ -333,15 +333,15 @@ const GetStarted = () => {
           </div>
 
           {/* Overlay Section */}
-          <div className={`w-1/2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-8 flex items-center justify-center transition-all duration-700 ease-in-out ${isSignUp ? 'translate-x-0' : '-translate-x-full'}`}>
+          <div className={`w-1/2 bg-gradient-to-r from-purple-600 to-pink-600 text-white p-8 flex items-center justify-center transition-all duration-700 ease-in-out ${isSignUp ? 'translate-x-0' : '-translate-x-full'}`}>
             <div className="text-center">
               {isSignUp ? (
                 <div>
                   <h3 className="text-2xl font-bold mb-4">Already have an account?</h3>
-                  <p className="mb-6 text-blue-100">Sign in with your credentials to access all features</p>
+                  <p className="mb-6 text-purple-100">Sign in with your credentials to access all features</p>
                   <button
                     onClick={toggleMode}
-                    className="border-2 border-white text-white font-semibold py-2 px-8 rounded-full hover:bg-white hover:text-blue-600 transition-all transform hover:scale-105"
+                    className="border-2 border-white text-white font-semibold py-2 px-8 rounded-full hover:bg-white hover:text-purple-600 transition-all transform hover:scale-105"
                   >
                     Sign In
                   </button>
@@ -349,10 +349,10 @@ const GetStarted = () => {
               ) : (
                 <div>
                   <h3 className="text-2xl font-bold mb-4">New here?</h3>
-                  <p className="mb-6 text-blue-100">Create an account and discover all the features we have to offer</p>
+                  <p className="mb-6 text-purple-100">Create an account and discover all the features we have to offer</p>
                   <button
                     onClick={toggleMode}
-                    className="border-2 border-white text-white font-semibold py-2 px-8 rounded-full hover:bg-white hover:text-blue-600 transition-all transform hover:scale-105"
+                    className="border-2 border-white text-white font-semibold py-2 px-8 rounded-full hover:bg-white hover:text-purple-600 transition-all transform hover:scale-105"
                   >
                     Sign Up
                   </button>

@@ -7,6 +7,7 @@ import Products from './components/Products.tsx';
 import Navigation from './components/Navigation.tsx';
 import Getstarted from './components/Getstarted.tsx';
 import Logout from './components/Logout.tsx';
+import Admin from './components/Admin.tsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/getstarted" element={<Getstarted />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/about" element={<AboutPage />} />

@@ -4,9 +4,15 @@ import axios from "axios";
 interface AuthProviderProps {
     children : ReactNode;
 }
+
+interface IUser {
+    id : string;
+    email : string;
+    name : string;
+}
 export interface AuthContextType {
-    user : string | null;
-    setUser : (user : string) => void;
+    user :  IUser| null;
+    setUser : (user : IUser) => void;
     logout : () => void;
 }
 export const AuthContext = createContext<AuthContextType | undefined>(
@@ -15,8 +21,7 @@ export const AuthContext = createContext<AuthContextType | undefined>(
 
 export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
-    const [user , setUser] = useState<string | null>("");
-    const [isLoading , setIsLoading] = useState(false);
+    const [user , setUser] = useState<IUser | null>(null);
 
     useEffect(() => {
         const checkAuth = async () => {
@@ -28,8 +33,6 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
             } catch (err) {
                 console.log("User not authenticated:", err);
                 setUser(null);
-            } finally {
-                setIsLoading(false);
             }
         };
 

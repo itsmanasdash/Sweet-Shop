@@ -12,7 +12,7 @@ const Contact = () => {
                 <div className="group">
                 <MapPin className="w-12 h-12 mx-auto mb-4 group-hover:animate-pulse" />
                 <h3 className="text-xl font-semibold mb-2">Location</h3>
-                <p>123 Sugar Street<br />Candy Lane, Sweet City</p>
+                <p>Amanaka Street<br />Raipur</p>
                 </div>
                 <div className="group">
                 <Clock className="w-12 h-12 mx-auto mb-4 group-hover:animate-pulse" />
@@ -22,7 +22,7 @@ const Contact = () => {
                 <div className="group">
                 <Phone className="w-12 h-12 mx-auto mb-4 group-hover:animate-pulse" />
                 <h3 className="text-xl font-semibold mb-2">Contact</h3>
-                <p>(555) SWEET-01<br />hello@sweetdreams.com</p>
+                <p>+91 7205481375<br />dashmanas521@gmail.com</p>
                 </div>
             </div>
             </div>
