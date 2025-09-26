@@ -126,3 +126,4 @@ However, I made sure to review, understand, and modify all AI-generated code bef
 <img width="1423" height="756" alt="Screenshot 2025-09-26 at 5 24 36 PM" src="https://github.com/user-attachments/assets/54dedd1b-6afc-44a3-9dab-c7513ac546bb" />
 <img width="1428" height="820" alt="Screenshot 2025-09-26 at 5 23 49 PM" src="https://github.com/user-attachments/assets/4a467fb1-39b3-4e9d-9c58-cffebe01881b" />
 <img width="1440" height="819" alt="Screenshot 2025-09-26 at 5 23 39 PM" src="https://github.com/user-attachments/assets/e2e4d2c0-16e5-43f0-853d-e4fe57e5cb8b" />
+<img width="1424" height="818" alt="Screenshot 2025-09-26 at 6 05 01 PM" src="https://github.com/user-attachments/assets/a6eb3a94-f139-41d3-8b0d-b73d84582e83" />
