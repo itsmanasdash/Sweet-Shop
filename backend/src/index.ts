@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use(express.json({ limit: "16kb"})); // to prevent large payload attacks
 app.use(cors({
   credentials : true,
-  origin : "https://sweet-shop-lac.vercel.app" // my frontend url
+  origin : "http://localhost:5173" // my frontend url
 }));
 
 app.use("/api/auth", authRouter);

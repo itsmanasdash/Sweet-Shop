@@ -80,7 +80,7 @@ const Products = () => {
         
         try {
             const response = await fetch(
-                `https://sweet-shop-4x77.vercel.app/api/sweets/${productId}/purchase`,
+                `http://localhost:8000/api/sweets/${productId}/purchase`,
                 {
                     method: 'POST',
                     headers: {
@@ -121,7 +121,7 @@ const Products = () => {
         setIsLoading(true)
         
         try {
-            const response = await fetch(`https://sweet-shop-4x77.vercel.app/api/sweets`, {
+            const response = await fetch(`http://localhost:8000/api/sweets`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -154,7 +154,7 @@ const Products = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch(`https://sweet-shop-4x77.vercel.app/api/sweets`)
+                const response = await fetch(`http://localhost:8000/api/sweets`)
                 if (!response.ok) {
                     throw new Error('Failed to fetch products')
                 }

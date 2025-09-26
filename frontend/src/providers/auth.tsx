@@ -25,7 +25,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     useEffect(() => {
         const checkAuth = async () => {
             try {
-                const response = await axios.get(`https://sweet-shop-4x77.vercel.app/api/auth/me`, {
+                const response = await axios.get(`http://localhost:8000/api/auth/me`, {
                     withCredentials: true
                 });
                 setUser(response.data.user);
@@ -40,7 +40,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
     const logout = async () => {
         try {
-            await axios.post(`https://sweet-shop-4x77.vercel.app/api/auth/logout`, {
+            await axios.post(`http://localhost:8000/api/auth/logout`, {}, {
                 withCredentials: true
             });
             setUser(null);
