@@ -108,3 +108,19 @@ export const logoutUser = (req : any, res : any) => {
         })
     }
 };
+
+export const getUser = async(req : any, res : any) => {
+    try{
+        const user = req.user;
+        return res.status(200).json({
+            user,
+            "message" : "User retrieved successfully"
+        })
+    }
+    catch(error){
+        console.log("Error getting user", error);
+        return res.status(500).json({
+            message : "Internal server error"
+        })
+    }
+}

@@ -48,4 +48,4 @@ dist-ssr
 *.sln
 *.sw?
 
-/src/generated/prisma
+/generated/prisma
