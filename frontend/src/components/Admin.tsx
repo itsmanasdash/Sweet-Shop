@@ -30,7 +30,7 @@ const Admin = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/sweets")
+      const response = await axios.get(`https://sweet-shop-4x77.vercel.app/api/sweets`)
       if (response.status !== 200) {
         throw new Error('Failed to fetch products')
       }
@@ -63,7 +63,7 @@ const Admin = () => {
 
     setLoading(true)
     try {
-      await axios.post(`http://localhost:8000/api/sweets/${restockingProduct.id}/restock`, {
+      await axios.post(`${URL}/api/sweets/${restockingProduct.id}/restock`, {
         quantity: restockQuantity
       }, {
         withCredentials: true
@@ -95,7 +95,7 @@ const Admin = () => {
 
     setLoading(true)
     try {
-      await axios.delete(`http://localhost:8000/api/sweets/${id}`)
+      await axios.delete(`https://sweet-shop-4x77.vercel.app/api/sweets/${id}`)
       setProducts(products.filter(product => product.id !== id))
       alert('Product deleted successfully!')
     } catch (error) {
@@ -112,7 +112,7 @@ const Admin = () => {
 
     setLoading(true)
     try {
-      await axios.put(`http://localhost:8000/api/sweets/${editingProduct.id}`, {
+      await axios.put(`https://sweet-shop-4x77.vercel.app/api/sweets/${editingProduct.id}`, {
         ...formData,
       } ,{
         withCredentials: true

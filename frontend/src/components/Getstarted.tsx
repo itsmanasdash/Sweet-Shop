@@ -76,7 +76,7 @@ const GetStarted = () => {
     setMessage({ type: '', text: '' });
 
     try {
-      const response = await axios.post("http://localhost:8000/api/auth/register", {
+      const response = await axios.post(`https://sweet-shop-4x77.vercel.app/api/auth/register`, {
         email : signUpData.email,
         name : signUpData.userName,
         password : signUpData.password,
@@ -125,7 +125,7 @@ const GetStarted = () => {
 
     try {
       // Simulate API call
-      const response = await axios.post("http://localhost:8000/api/auth/login", {
+      const response = await axios.post(`https://sweet-shop-4x77.vercel.app/api/auth/login`, {
         email : signInData.email,
         password : signInData.password
       },{
