@@ -53,32 +53,32 @@ git clone https://github.com/itsmanasdash/Sweet-Shop
 cd sweet-shop
 cd backend
 ```
-# Install dependencies
+### Install dependencies
 ```bash
 npm install
 ```
-# Create a .env file based on the .env.example file
+### Create a .env file based on the .env.example file
 ```bash
 cp .env.example .env
 ```
-# Generate Prisma Client
+### Generate Prisma Client
 ```bash
 npx prisma generate
 ```
-# Start the development server 
+### Start the development server 
 ```bash
 npm run dev
 ```
-# Open http://localhost:8000 in your browser to view the application    
+### Open http://localhost:8000 in your browser to view the application    
 ```bash
 Setup the Frontend
 cd ../frontend
 ```
-# Install dependencies
+### Install dependencies
 ```bash
 npm install
 ```
-# Start the development server 
+### Start the development server 
 ```bash
 npm run dev
 ```
