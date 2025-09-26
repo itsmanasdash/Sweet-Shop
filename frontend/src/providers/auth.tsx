@@ -40,7 +40,7 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
 
     const logout = async () => {
         try {
-            await axios.post(`https://sweet-shop-4x77.vercel.app/api/auth/logout`, {}, {
+            await axios.post(`api/auth/logout`, {}, {
                 withCredentials: true
             });
             setUser(null);
