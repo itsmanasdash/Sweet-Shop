@@ -80,11 +80,20 @@ const Navigation = () => {
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
           <div className="pt-2">
+            {user ? (
+                <button
+              className="block w-full text-center bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-2 rounded-full text-base font-medium hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg"
+            >
+              <Link to="/logout">Logout</Link>
+            </button>)
+            :
+            (
             <button
               className="block w-full text-center bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-2 rounded-full text-base font-medium hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg"
             >
-              Get Started
+              <Link to="/getstarted">Get Started</Link>
             </button>
+        )}
           </div>
         </div>
       </div>
