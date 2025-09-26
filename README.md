@@ -61,6 +61,10 @@ npm install
 ```bash
 cp .env.example .env
 ```
+### Prisma Migrate
+```bash
+npx prisma migrate dev --name init
+```
 ### Generate Prisma Client
 ```bash
 npx prisma generate
